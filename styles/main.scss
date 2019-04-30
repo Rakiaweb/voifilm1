@@ -1,0 +1,188 @@
+* {
+  box-sizing: border-box;
+  font-family: "Oswald", sans-serif;
+}
+html {
+  height: 100%;
+  // overflow: scroll;
+}
+body {
+  height: 100%;
+  padding: 0;
+  margin: 0;
+  background: #333333;
+  color: white;
+  font-family: "Oswald", sans-serif;
+
+  // overflow: scroll;
+  //   overflow-x: hidden;
+  // overflow-y: scroll;
+}
+
+header {
+  a {
+    color: white;
+    text-decoration: none;
+    &:hover {
+      opacity: 0.5;
+    }
+  }
+  h1 {
+    padding-left: 20px;
+    margin-bottom: 40px;
+    // font-size: 2rem;
+    letter-spacing: 5px;
+  }
+  .navigation {
+    // position:;
+    display: block;
+    .nav-items {
+      padding: 0 0 0 10px;
+      margin: 0;
+      .nav-item {
+        display: inline-block;
+        padding: 10px;
+        a {
+          text-decoration: none;
+        }
+      }
+    }
+  }
+
+  .sns-links {
+    ul {
+      padding: 0 0 0 10px;
+      margin: 0;
+      .sns {
+        display: inline-block;
+        padding: 10px;
+      }
+    }
+  }
+}
+
+// Portfolio
+.portfolio-container {
+  width: 100%;
+  // height: 100%;
+  padding: 100px 0;
+  background: #333333;
+  align-content: center;
+  // overflow: scroll;
+  .portfolio-box {
+    // width: 90%;
+    margin: auto;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    align-content: space-between;
+    // overflow: hidden;
+    .portfolio {
+      padding: 15px;
+      margin: auto;
+      display: block;
+
+      // background: white;
+      a {
+        .portfolio-column {
+          position: relative;
+          img {
+            width: 100%;
+            height: 100%;
+            margin: auto;
+          }
+          .hover-overlay {
+            width: 100%;
+            height: 98%;
+            background: black;
+            position: absolute;
+            top: 0;
+            left: 0;
+            z-index: 1;
+            opacity: 0;
+            transition: all 0.5s ease;
+            display: flex;
+            flex-direction: column;
+            align-content: space-between;
+            &:hover {
+              opacity: 0.6;
+            }
+            .hover-title {
+              margin: auto; // Needed for vertically centering title
+              color: white;
+              font-size: 1.4rem;
+              letter-spacing: 4px;
+              text-align: center;
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+// Project
+.project-container {
+  display: block;
+  width: 100%;
+  max-width: 800px;
+  height: 100%;
+  padding-top: 100px;
+  margin: auto; //center this container
+  align-content: center;
+  align-items: center;
+  .project {
+    position: relative;
+    width: 90%;
+    height: 0;
+    padding-top: 56.25%;
+    margin: auto;
+    align-content: center;
+    align-items: center;
+    iframe {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      overflow: scroll;
+    }
+  }
+}
+
+// Media Query
+// Smartphone
+@media (max-width: 780px) {
+  .portfolio-container {
+    .portfolio-box {
+      width: 90%;
+      .portfolio {
+        flex-basis: 100%;
+        height: 40vw;
+      }
+    }
+  }
+}
+
+@media (min-width: 781px) {
+  .portfolio-container {
+    .portfolio-box {
+      width: 90%;
+      max-width: 1200px;
+      .portfolio {
+        flex-basis: 50%;
+      }
+    }
+  }
+}
+
+// @media (min-width: 1024px) {
+//   .portfolio-container {
+//     .portfolio-box {
+//       width: 90%;
+//       .portfolio {
+//         flex-basis: 33.333%;
+//       }
+//     }
+//   }
+// }
