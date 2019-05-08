@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>VOIFILM</title>
+    <link rel="stylesheet" href="styles/main.css" />
+    <!-- <script type="text/javascript" src="main.js" async></script> -->
+    <link
+      href="https://fonts.googleapis.com/css?family=Oswald:300,400,500,600,700"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://use.fontawesome.com/releases/v5.7.2/css/all.css"
+      integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr"
+      crossorigin="anonymous"
+    />
+  </head>
+  <body>
+    <div class="content-container">
+      <header>
+        <a href="index.html"><h1>VOIFILM</h1></a>
+        <div class="navigation">
+          <ul class="nav-items">
+            <li class="nav-item"><a href="index.html">HOME</a></li>
+            <!-- <li class="nav-item"><a href="about.html">ABOUT</a></li> -->
+            <li class="nav-item"><a href="contact.html">CONTACT</a></li>
+          </ul>
+        </div>
+        <div class="sns-links">
+          <ul>
+            <li class="sns">
+              <a href="https://www.instagram.com/voi1998/" target="_blank"
+                ><i class="fab fa-instagram"></i
+              ></a>
+            </li>
+            <li class="sns">
+              <a
+                href="https://www.youtube.com/channel/UCGiO44gBNi2OhIoaUicnMXA"
+                target="_blank"
+                ><i class="fab fa-youtube"></i
+              ></a>
+            </li>
+            <li class="sns">
+              <a href=""><i class="far fa-envelope"></i></a>
+            </li>
+          </ul>
+        </div>
+      </header>
+
+      <div class="contact-container">
+        <p>Feel free to contact me.</p>
+        <!-- <div id="form"> -->
+        <form class="form" id="form" method="POST" action="contact.php">
+          <div class="name">
+            <input
+              name="name"
+              type="text"
+              class="validate feedback-input"
+              placeholder="NAME"
+            />
+          </div>
+          <div class="email">
+            <input
+              name="email"
+              type="text"
+              class="validate feedback-input"
+              placeholder="EMAIL"
+            />
+          </div>
+          <div class="message">
+            <textarea
+              name="message"
+              class="validate feedback-input"
+              placeholder="MESSAGE"
+            ></textarea>
+          </div>
+          <div class="submit">
+            <input type="submit" value="SEND" id="button-blue" />
+            <!-- <div class="ease"></div> -->
+          </div>
+        </form>
+        <!-- </div> -->
+      </div>
+      <footer>2019 &copy; VOIFILM All Rights Reserved.</footer>
+    </div>
+  </body>
+</html>
